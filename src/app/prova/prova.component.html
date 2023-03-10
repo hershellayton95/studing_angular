@@ -1,5 +1,5 @@
 <div>
-  <ul *ngFor="let person of personas">
+  <ul *ngFor="let person of persons">
     <li>
       <span class="pallino" [ngClass]="person.isOnline ? 'online white' : 'offline'">i</span>
       <span>{{person.nome}} {{person.cognome}}</span>

@@ -1,14 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
+
+type Persons = { nome: string; cognome: string; isOnline: boolean; color: string; }[];
 @Component({
   selector: 'app-prova',
   templateUrl: './prova.component.html',
   styleUrls: ['./prova.component.css']
 })
 export class ProvaComponent {
-  personas = [
-    { nome: "Filippo", cognome: "Di Marco", isOnline: true, color: "green" },
-    { nome: "Romano", cognome: "Chiavetta", isOnline: false, color: "blue" },
-    { nome: "Alberto", cognome: "Passarello", isOnline: false, color: "yellow" },
-  ]
+
+  @Input() persons: Persons | undefined;
 }
