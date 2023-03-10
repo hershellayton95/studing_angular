@@ -11,9 +11,6 @@ export class CardComponent implements OnChanges, OnInit, DoCheck, AfterContentIn
     console.log("0 costruttore");
   }
 
-
-
-
   ngOnChanges(): void {
     console.log("on changes --- questa non dovrebbe funzionare");
   }
