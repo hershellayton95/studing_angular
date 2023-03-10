@@ -7,14 +7,7 @@ import { Component } from '@angular/core';
 })
 export class CardComponent {
 
-  title: string = "";
+  isVisible = true;
+  greater = 10;
 
-  onClick(): void {
-    this.title = "maiale"
-  }
-
-
-  onInput(event: Event): void {
-    this.title = (<HTMLInputElement>event.target).value;
-  }
 }

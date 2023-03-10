@@ -1,6 +1,18 @@
-<button (click)="onClick()">tasto</button>
-<input type="text" [value]="title" (input)="onInput($event)">
-<input type="text" [(ngModel)]="title">
-<!-- per usare ngmodel devo improtare formsmodules in app modeule -->
+<!--
+  *ngIf è una direttiva strutturale e ha * per questo
+ -->
+<p *ngIf="greater > 10 ; else blockElse">
+  Ciao sone un paragrafo
+</p>
+<ng-template #blockElse>
+  <p>sono un altro paragrafo</p>
+</ng-template>
 
-<p>{{title}}</p>
+
+<ng-template *ngIf=" isVisible; then bloccoIf;else bloccoElse">qui non vedo nulla</ng-template>
+<ng-template #bloccoIf>
+  <p>Sono il paragrafo if</p>
+</ng-template>
+<ng-template #bloccoElse>
+  <p>Sono il paragrafo else</p>
+</ng-template>
