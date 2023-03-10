@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./prova.component.css']
 })
 export class ProvaComponent {
-  personas = [
-    { nome: "Filippo", cognome: "Di Marco", isOnline: true },
-    { nome: "Romano", cognome: "Chiavetta", isOnline: false },
-    { nome: "Alberto", cognome: "Passarello", isOnline: false },
-  ]
+  personaggi = "topolino"
 }
