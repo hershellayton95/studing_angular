@@ -7,6 +7,16 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 })
 export class CardComponent implements OnChanges, OnInit, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
 
+  dog = {
+    name: "Shiba Inu",
+    breed: "Dog Breed",
+    description: `The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+    bred for hunting.`
+  }
+
+  style = "color: red"
+
   constructor() {
     console.log("0 costruttore");
   }
@@ -16,6 +26,13 @@ export class CardComponent implements OnChanges, OnInit, DoCheck, AfterContentIn
   }
   ngOnInit(): void {
     console.log("1 Init");
+    setInterval(() => {
+      if (this.style === "color: red") {
+        this.style = "color: blue"
+      } else {
+        this.style = "color: red"
+      }
+    }, 2000)
   }
   ngDoCheck(): void {
     console.log("2 e 6 e 8 do check");
