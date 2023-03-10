@@ -5,33 +5,16 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })
-export class CardComponent implements OnInit {
+export class CardComponent {
 
-  dog = {
-    name: "Shiba Inu",
-    breed: "Dog Breed",
-    description: `The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-    bred for hunting.`
-  }
-
-  style = "color: red"
-
-  constructor() {
-  }
+  title: string = "";
 
   onClick() {
     console.log("tasto premuto");
-
   }
 
-  ngOnInit(): void {
-    setInterval(() => {
-      if (this.style === "color: red") {
-        this.style = "color: blue"
-      } else {
-        this.style = "color: red"
-      }
-    }, 2000)
+
+  onInput(event: Event): void {
+    this.title = (<HTMLInputElement>event.target).value;
   }
 }
