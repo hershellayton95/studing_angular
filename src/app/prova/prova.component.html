@@ -1,7 +1,13 @@
 <div>
   <ul *ngFor="let person of persons">
     <li>
-      <span class="pallino" [ngClass]="person.isOnline ? 'online white' : 'offline'">i</span>
+      <ng-template *ngIf="person.isOnline; then online else offline"></ng-template>
+      <ng-template #online>
+        <span class="pallino online"></span>
+      </ng-template>
+      <ng-template #offline>
+        <span class="pallino offline"></span>
+      </ng-template>
       <span>{{person.nome}} {{person.cognome}}</span>
     </li>
   </ul>

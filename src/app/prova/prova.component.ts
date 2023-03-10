@@ -1,7 +1,5 @@
 import { Component, Input } from '@angular/core';
 
-
-type Persons = { nome: string; cognome: string; isOnline: boolean; color: string; }[];
 @Component({
   selector: 'app-prova',
   templateUrl: './prova.component.html',
