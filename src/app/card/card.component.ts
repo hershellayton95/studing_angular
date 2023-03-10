@@ -1,4 +1,4 @@
-import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, OnChanges, OnDestroy, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -9,8 +9,8 @@ export class CardComponent {
 
   title: string = "";
 
-  onClick() {
-    console.log("tasto premuto");
+  onClick(): void {
+    this.title = "maiale"
   }
 
 

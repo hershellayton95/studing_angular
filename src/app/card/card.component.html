@@ -1,3 +1,6 @@
 <button (click)="onClick()">tasto</button>
 <input type="text" [value]="title" (input)="onInput($event)">
+<input type="text" [(ngModel)]="title">
+<!-- per usare ngmodel devo improtare formsmodules in app modeule -->
+
 <p>{{title}}</p>
