@@ -1,6 +1,9 @@
-<div [ngSwitch]="personaggi">
-  <div *ngSwitchCase="'pippo'">pippo</div>
-  <div *ngSwitchCase="'paperino'">paperino</div>
-  <div *ngSwitchCase="'topolino'">topolino</div>
-  <div *ngSwitchDefault>output2</div>
+<div>
+  <ul *ngFor="let person of personas">
+    <li>
+      <span class="pallino" [ngStyle]="{'background': person.isOnline ? 'green' : 'red'}"></span>
+      <span class="pallino" [ngStyle]="{'background': person.color}"></span>
+      <span>{{person.nome}} {{person.cognome}}</span>
+    </li>
+  </ul>
 </div>
