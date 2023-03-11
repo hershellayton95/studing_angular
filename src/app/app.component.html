@@ -1,2 +1,5 @@
-<input #inputSaluti value="ciao">
-<button (click)="onClick()">Click</button>
+<input type="radio" name="coloreSfondo" (click)="cambiaColore('red')">Red
+<input type="radio" name="coloreSfondo" (click)="cambiaColore('green')">green
+<input type="radio" name="coloreSfondo" (click)="cambiaColore('blue')">blue
+
+<p [appHightlight]='colore' defaultColor="purple">prova</p>
