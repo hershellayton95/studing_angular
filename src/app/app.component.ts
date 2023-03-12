@@ -12,9 +12,6 @@ import {
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  colore = '';
-
-  cambiaColore(colore: string) {
-    this.colore = colore;
-  }
+  title = 'corso-angular';
+  oggi = Date.now();
 }
