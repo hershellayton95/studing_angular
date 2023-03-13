@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AboutComponent } from './componenti/about/about.component';
+import { ContactComponent } from './componenti/contact/contact.component';
+
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ProvaComponent } from './prova/prova.component';
-import { HightlightDirective } from './directive/hightlight.directive';
+import { HomeComponent } from './componenti/home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, ProvaComponent, HightlightDirective],
+  declarations: [AppComponent, AboutComponent, ContactComponent, HomeComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
