@@ -5,9 +5,24 @@ import { Injectable } from '@angular/core';
 })
 export class ProvaService {
   persone = [
-    { nome: 'Filippo', cognome: 'Di Marco', isOnline: true },
-    { nome: 'Alberto', cognome: 'Passarello', isOnline: false },
-    { nome: 'Romano', cognome: 'Chiavetta', isOnline: false },
+    {
+      nome: 'Filippo',
+      cognome: 'Di Marco',
+      isOnline: true,
+      colore: 'verde',
+    },
+    {
+      nome: 'Alberto',
+      cognome: 'Passarello',
+      isOnline: false,
+      colore: 'giallo',
+    },
+    {
+      nome: 'Romano',
+      cognome: 'Chiavetta',
+      isOnline: false,
+      colore: 'nero',
+    },
   ];
   constructor() {}
 

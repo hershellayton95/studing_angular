@@ -7,9 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContattiComponent } from './componenti/contatti/contatti.component';
 import { HomeComponent } from './componenti/home/home.component';
+import { ContattoComponent } from './componenti/contatto/contatto.component';
 
 @NgModule({
-  declarations: [AppComponent, ContattiComponent, HomeComponent],
+  declarations: [AppComponent, ContattiComponent, HomeComponent, ContattoComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
