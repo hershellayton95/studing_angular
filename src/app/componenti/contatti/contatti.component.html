@@ -1,10 +1,11 @@
-<div>
-    <h1>lista contatti</h1>
-    <div *ngFor="let persona of persone, index as i">
-        <a routerLink="/contatti/{{i}}">
-            <p>{{persona.nome}} {{persona.cognome}}</p>
-        </a>
+<div style="display: flex;">
+    <div style="margin-right: 10%;">
+        <h1>lista contatti</h1>
+        <div *ngFor="let persona of persone, index as i">
+            <a routerLink="/contatti/{{i}}">
+                <p>{{persona.nome}} {{persona.cognome}}</p>
+            </a>
+        </div>
     </div>
+    <router-outlet></router-outlet>
 </div>
-
-<router-outlet></router-outlet>
