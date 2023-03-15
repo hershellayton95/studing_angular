@@ -1,4 +1,4 @@
-<form #homeform="ngForm" (ngSubmit)="onSubmit(homeform)">
+<form #homeform="ngForm" (ngSubmit)="onSubmit()">
     <mat-form-field appearance="fill">
         <mat-label>Nome</mat-label>
         <input matInput type="text" name="nome" ngModel required>
@@ -14,5 +14,5 @@
             <mat-option value="blue">Blue</mat-option>
         </mat-select>
     </mat-form-field>
-    <button mat-raised-button color="primary" type="submit" [disabled]="!homeform.valid">Submit</button>
+    <button mat-raised-button color="primary" type="submit">Submit</button>
 </form>
