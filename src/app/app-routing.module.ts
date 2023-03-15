@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth/auth.guard';
 import { ContattiComponent } from './componenti/contatti/contatti.component';
 import { ContattoComponent } from './componenti/contatto/contatto.component';
+import { FormComponent } from './componenti/form/form.component';
 import { HomeComponent } from './componenti/home/home.component';
 import { NotfoundComponent } from './componenti/notfound/notfound.component';
 
@@ -20,6 +21,7 @@ const routes: Routes = [
       },
     ],
   },
+  { path: 'form', component: FormComponent },
   { path: '404', component: NotfoundComponent },
   { path: '**', redirectTo: '404' },
 ];
